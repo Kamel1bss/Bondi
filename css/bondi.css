@@ -1,0 +1,224 @@
+:root {
+    --main-color:#19283f;
+    --second-color:#33d1cc;
+    --third-color:#ff941b;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* start with navbar */
+.navbar {
+    background-color: #19283f;
+}
+.navbar .container .navbar-toggler svg {
+    color: #fff;
+}
+.navbar .container .navbar-toggler {
+    border-color: #fff;
+    color: #fff;
+    font-size: 25px;
+}
+.navbar .container .navbar-toggler:focus {
+box-shadow: none;
+}
+.navbar .navbar-nav .nav-item {
+    padding: 16px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+.navbar .navbar-nav .nav-item .active,
+.navbar .navbar-nav .nav-item .nav-link:hover
+{
+    color: #33d1cc;
+}
+ul .search {
+    padding: 0 16px 0;
+}
+.navbar .navbar-nav .nav-item svg {
+padding: 0 16px;
+margin-right:0 ;
+    color:#33d1cc;
+    border-left: 1px solid #33d1cc;
+}
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+.navbar .navbar-nav .nav-item button {
+position: absolute;
+top: 20%;
+left: 0;
+}
+.nav-item .btn {
+    color:#ff941b;
+    padding: 5px 20px;
+}
+/* End navbar */
+/* start landing */
+.landing {
+    min-height: calc( 100vh - 70px);
+    background-color: #19283f;
+}
+.landing .mainn .btn {
+        color:#ff941b;
+        padding: 5px 20px;
+        margin-top: 35px;
+}
+.features {
+    min-height:100vh;
+    background-color: #fff;
+}
+.main-title svg {
+    color: #ff941b;
+    font-size: 90px;
+    display: block;
+    margin:60px auto 20px auto;
+}
+.main-title {
+    position: relative;
+}
+.main-title p {
+    font-weight: 500;
+    font-size: 14px;
+}
+.main-title::after {
+    content: "";
+    width: 130px;
+    height: 2px;
+    background-color: #00c6bf;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .row .icons {
+    height: 200px;
+}
+.features .row .icons svg {
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.features .row .icons .number {
+    font-size: 12rem;
+    color: #eff7fa;
+}
+.features .row .icons .icon {
+    color: #00c6bf;
+    bottom: 0;
+}
+.features .row h4 {
+    color: #ff941b;
+}
+/* End landing */
+.our-work {
+    background-color: #eff7fa;
+}
+.active{
+    color: #ff941b;
+}
+ul li {
+padding: 0.5rem 1.2rem;
+cursor: pointer;
+}
+/* not active hover */
+li:not(.active):hover {
+    color: red;
+    cursor: pointer;
+}
+.our-work .box img {
+    height: 200.65px;
+    width: 100%;
+}
+.our-work .box {
+    position: relative;
+    overflow: hidden;
+}
+.our-work .box::before {
+    content: attr(data-3bs);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 20px);
+    background-color: #19283f96;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.our-work .box:hover::before {
+    transform: translate(-200%,-200%) scale(1.5);
+}
+.btn {
+    color: #ff941b;
+}
+/* start our-team */
+.our-team {
+    background-color: #eff7fa;
+}
+.card img {
+    height: 100%;
+    width: 100%;
+}
+.card h4 {
+    background-color:#33d1cc;
+    font-size: 20px;
+}
+/* start */
+.start {
+    background-color: #19283f;
+}
+/* subscribe */
+.subscribe {
+    padding: 0 10% 0 10%;
+    background-color: #ff941b;
+}
+.subscribe h4 {
+    font-size: 22px;
+    padding: 0;
+}
+.subscribe label {
+    display: inline-block;
+}
+.subscribe input {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: white;
+    height: 35px;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 22;
+    line-height: 1.7;
+}
+.subscribe .btn {
+background-color: #19283f;
+padding: 0.5rem 3.5rem;
+}
+.subscribe .btn:focus {
+color: #fff;
+}
+.subscribe .btn:hover {
+color: #fff;
+}
+/* start footer */
+.footer {
+    background-color: #19283f;
+}
+/* media queries */
+@media (max-width: 767px ) {
+    .footer {
+        text-align: center;
+    }
+} 
